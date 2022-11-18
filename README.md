@@ -18,7 +18,7 @@ C:>go version
 
 # 2.サーバー用ファイルの準備
 >以下のようなディレクトリ構成にしてください。
->作成ファイルは以下に記載しています。コピーして作成してください。index.htmlはAPIの作者様のサーバーに飛びます。
+>作成ファイルは以下に記載しています。コピーして作成してください。index.htmlはAPIの作者様のリンク集です。
 ```
 src
 └─yutons_server
@@ -237,11 +237,9 @@ src
     <br>
     <hr>
     <br>
-
 </body>
 
 </html>
-        
 ```
 
 </details>
@@ -249,7 +247,6 @@ src
 <details><summary>server.go</summary>
     
 ```rb
-
 package main
 
 import (
@@ -300,9 +297,7 @@ func main() {
 	if err != nil {
 		log.Printf("%s\n", err.Error())
 	}
-}
-
-    
+}    
 ```
 
 </details>

@@ -66,8 +66,6 @@
     <br>
     <hr>
     <br>
-    {% comment %} {{ template "footer" }} {% endcomment %}
-
 </body>
 
 </html>

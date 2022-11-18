@@ -2170,3 +2170,213 @@ created by net/http.(*Server).Serve
 2022/11/18 14:05:53 Official  ******************* MkRoomsForStarCollec() *******************
 2022/11/18 14:05:53  lenght of lives = 20
 2022/11/18 14:05:53 Official  ******************* RoomVisit.Save() *******************
+2022/11/18 16:49:24 rootPath: ""
+2022/11/18 16:49:42 *****************************************************************
+2022/11/18 16:49:42 配信中ルーム数
+2022/11/18 16:49:42 
+2022/11/18 16:49:42 　ジャンル数= 11
+2022/11/18 16:49:42 
+2022/11/18 16:49:42 　ルーム数　ジャンル　ジャンル名
+2022/11/18 16:49:42        150         0  Popularity
+2022/11/18 16:49:42         62       200  Free
+2022/11/18 16:49:42         21       102  Idol
+2022/11/18 16:49:42         27       103  Talent Model
+2022/11/18 16:49:42         14       101  Music
+2022/11/18 16:49:42         10       104  Voice Actors & Anime
+2022/11/18 16:49:42          2       105  Comedians/Talk Show
+2022/11/18 16:49:42         14       107  Virtual
+2022/11/18 16:49:42          8       704  MEN'S
+2022/11/18 16:49:42         34       703  Karaoke
+2022/11/18 16:49:42          1       706  Game
+2022/11/18 16:49:42 
+2022/11/18 16:49:42 Official  ******************* ExclList.Read() *******************
+2022/11/18 16:49:42 Official  excl. 100000       (応援ルーム)xxxx0
+2022/11/18 16:49:42 Official  excl. 100001       (応援ルーム)xxxx1
+2022/11/18 16:49:42 Official  excl. 100002       (関わりたくないルーム)xxxx2
+2022/11/18 16:49:42 Official  excl. 100003       (関わりたくないルーム)xxxx3
+2022/11/18 16:49:42 Official  excl. 100004       (星がもらえないルール)xxxx4
+2022/11/18 16:49:42 Official  ******************* RoomVisit.Restore() *******************
+2022/11/18 16:49:42 Official  ******************* MkRoomsForStarCollec() *******************
+2022/11/18 16:49:42  lenght of lives = 20
+2022/11/18 16:49:42 Official  ******************* RoomVisit.Save() *******************
+2022/11/18 16:56:47 http: panic serving [::1]:50215: open templates/footer.gtpl: The system cannot find the file specified.
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0xa58560, 0xc0002973e0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+github.com/Chouette2100/srhandler.HandlerT009topForm({0xb56fd8?, 0xc000066000}, 0x78ce1a?)
+	C:/Users/2190498/go/pkg/mod/github.com/!chouette2100/srhandler@v0.3.0/HandlerT009topForm.go:99 +0xc85
+net/http.HandlerFunc.ServeHTTP(0xc0002ebaf0?, {0xb56fd8?, 0xc000066000?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xb56fd8, 0xc000066000}, 0xc0000bc000)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f320?}, {0xb56fd8, 0xc000066000}, 0xc0000bc000)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000b40a0, {0xb57540, 0xc0000a4150})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2022/11/18 16:56:47 http: panic serving [::1]:50216: open templates/footer.gtpl: The system cannot find the file specified.
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0xa58560, 0xc000182c60})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+github.com/Chouette2100/srhandler.HandlerT009topForm({0xb56fd8?, 0xc0000660e0}, 0x78ce1a?)
+	C:/Users/2190498/go/pkg/mod/github.com/!chouette2100/srhandler@v0.3.0/HandlerT009topForm.go:99 +0xc85
+net/http.HandlerFunc.ServeHTTP(0xc0002e9af0?, {0xb56fd8?, 0xc0000660e0?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xb56fd8, 0xc0000660e0}, 0xc00037c000)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000296090?}, {0xb56fd8, 0xc0000660e0}, 0xc00037c000)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000000000, {0xb57540, 0xc0000a4150})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2022/11/18 16:56:47 http: panic serving [::1]:50217: open templates/footer.gtpl: The system cannot find the file specified.
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0xa58560, 0xc000182e10})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+github.com/Chouette2100/srhandler.HandlerT009topForm({0xb56fd8?, 0xc00023a000}, 0x78ce1a?)
+	C:/Users/2190498/go/pkg/mod/github.com/!chouette2100/srhandler@v0.3.0/HandlerT009topForm.go:99 +0xc85
+net/http.HandlerFunc.ServeHTTP(0xc0000cdaf0?, {0xb56fd8?, 0xc00023a000?}, 0x4?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xb56fd8, 0xc00023a000}, 0xc0000bc100)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007f860?}, {0xb56fd8, 0xc00023a000}, 0xc0000bc100)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0001d20a0, {0xb57540, 0xc0000a4150})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2022/11/18 16:56:49 http: panic serving [::1]:50218: open templates/footer.gtpl: The system cannot find the file specified.
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0xa58560, 0xc000183230})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+github.com/Chouette2100/srhandler.HandlerT009topForm({0xb56fd8?, 0xc0000661c0}, 0x78ce1a?)
+	C:/Users/2190498/go/pkg/mod/github.com/!chouette2100/srhandler@v0.3.0/HandlerT009topForm.go:99 +0xc85
+net/http.HandlerFunc.ServeHTTP(0xc0002e9af0?, {0xb56fd8?, 0xc0000661c0?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xb56fd8, 0xc0000661c0}, 0xc0002fa300)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000182f00?}, {0xb56fd8, 0xc0000661c0}, 0xc0002fa300)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000b4140, {0xb57540, 0xc0000a4150})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2022/11/18 16:57:02 rootPath: ""
+2022/11/18 16:57:04 http: panic serving [::1]:50236: open templates/footer.gtpl: The system cannot find the file specified.
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0xa58560, 0xc000094f30})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+github.com/Chouette2100/srhandler.HandlerT009topForm({0xb56fd8?, 0xc0000b8000}, 0x78ce1a?)
+	C:/Users/2190498/go/pkg/mod/github.com/!chouette2100/srhandler@v0.3.0/HandlerT009topForm.go:99 +0xc85
+net/http.HandlerFunc.ServeHTTP(0xc000069af0?, {0xb56fd8?, 0xc0000b8000?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xb56fd8, 0xc0000b8000}, 0xc0000a0000)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000094030?}, {0xb56fd8, 0xc0000b8000}, 0xc0000a0000)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000015e0, {0xb57540, 0xc00007fa40})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2022/11/18 16:57:06 http: panic serving [::1]:50237: open templates/footer.gtpl: The system cannot find the file specified.
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0xa58560, 0xc000095770})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+github.com/Chouette2100/srhandler.HandlerT009topForm({0xb56fd8?, 0xc000194000}, 0x78ce1a?)
+	C:/Users/2190498/go/pkg/mod/github.com/!chouette2100/srhandler@v0.3.0/HandlerT009topForm.go:99 +0xc85
+net/http.HandlerFunc.ServeHTTP(0xc000055af0?, {0xb56fd8?, 0xc000194000?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xb56fd8, 0xc000194000}, 0xc00016c200)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007fb30?}, {0xb56fd8, 0xc000194000}, 0xc00016c200)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000208000, {0xb57540, 0xc00007fa40})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2022/11/18 16:57:06 http: panic serving [::1]:50238: open templates/footer.gtpl: The system cannot find the file specified.
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0xa58560, 0xc0003248d0})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+github.com/Chouette2100/srhandler.HandlerT009topForm({0xb56fd8?, 0xc0000b80e0}, 0x78ce1a?)
+	C:/Users/2190498/go/pkg/mod/github.com/!chouette2100/srhandler@v0.3.0/HandlerT009topForm.go:99 +0xc85
+net/http.HandlerFunc.ServeHTTP(0xc0000e9af0?, {0xb56fd8?, 0xc0000b80e0?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xb56fd8, 0xc0000b80e0}, 0xc00016c400)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00007ff20?}, {0xb56fd8, 0xc0000b80e0}, 0xc00016c400)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000d20a0, {0xb57540, 0xc00007fa40})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2022/11/18 16:57:06 http: panic serving [::1]:50239: open templates/footer.gtpl: The system cannot find the file specified.
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0xa58560, 0xc000282c30})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+github.com/Chouette2100/srhandler.HandlerT009topForm({0xb56fd8?, 0xc0002a4000}, 0x78ce1a?)
+	C:/Users/2190498/go/pkg/mod/github.com/!chouette2100/srhandler@v0.3.0/HandlerT009topForm.go:99 +0xc85
+net/http.HandlerFunc.ServeHTTP(0xc0000e9af0?, {0xb56fd8?, 0xc0002a4000?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xb56fd8, 0xc0002a4000}, 0xc000294000)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000282210?}, {0xb56fd8, 0xc0002a4000}, 0xc000294000)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000d2140, {0xb57540, 0xc00007fa40})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
+2022/11/18 16:57:11 http: panic serving [::1]:50240: open templates/footer.gtpl: The system cannot find the file specified.
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1850 +0xbf
+panic({0xa58560, 0xc000283770})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:368
+github.com/Chouette2100/srhandler.HandlerT009topForm({0xb56fd8?, 0xc0001940e0}, 0x78ce1a?)
+	C:/Users/2190498/go/pkg/mod/github.com/!chouette2100/srhandler@v0.3.0/HandlerT009topForm.go:99 +0xc85
+net/http.HandlerFunc.ServeHTTP(0xc000385af0?, {0xb56fd8?, 0xc0001940e0?}, 0x0?)
+	C:/Program Files/Go/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0xb56fd8, 0xc0001940e0}, 0xc00016c700)
+	C:/Program Files/Go/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000192e40?}, {0xb56fd8, 0xc0001940e0}, 0xc00016c700)
+	C:/Program Files/Go/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0002fc000, {0xb57540, 0xc00007fa40})
+	C:/Program Files/Go/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3102 +0x4db
